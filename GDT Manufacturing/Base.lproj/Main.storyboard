@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
+        <!--About Us View Controller-->
         <scene sceneID="i7E-TM-vJZ">
             <objects>
-                <viewController id="5JT-z2-HBG" sceneMemberID="viewController">
+                <viewController id="5JT-z2-HBG" customClass="AboutUsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ElR-oN-IbI"/>
                         <viewControllerLayoutGuide type="bottom" id="fEI-VY-2nE"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1878" y="417"/>
         </scene>
-        <!--View Controller-->
+        <!--Cable Material View Controller-->
         <scene sceneID="Xkw-TK-ucQ">
             <objects>
-                <viewController id="aXe-F8-5KH" sceneMemberID="viewController">
+                <viewController id="aXe-F8-5KH" customClass="CableMaterialViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q9n-6x-gS2"/>
                         <viewControllerLayoutGuide type="bottom" id="Wbi-PD-93b"/>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="1876" y="-245"/>
         </scene>
-        <!--View Controller-->
+        <!--Copper View Controller-->
         <scene sceneID="jje-Kv-hea">
             <objects>
-                <viewController id="od0-Hf-bR1" sceneMemberID="viewController">
+                <viewController id="od0-Hf-bR1" customClass="CopperViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZX8-oO-qQV"/>
                         <viewControllerLayoutGuide type="bottom" id="ybC-Ln-A1z"/>
@@ -136,10 +136,10 @@
             </objects>
             <point key="canvasLocation" x="2625" y="133"/>
         </scene>
-        <!--View Controller-->
+        <!--Fiber View Controller-->
         <scene sceneID="47j-48-ykY">
             <objects>
-                <viewController id="d1f-ik-gRB" sceneMemberID="viewController">
+                <viewController id="d1f-ik-gRB" customClass="FiberViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mE9-Nd-i5t"/>
                         <viewControllerLayoutGuide type="bottom" id="VeY-6l-nLu"/>
@@ -198,7 +198,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHp-15-Ezk">
-                                <rect key="frame" x="155" y="390" width="65" height="21"/>
+                                <rect key="frame" x="155" y="388.5" width="65" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.77737489989999997" blue="0.34304844550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
