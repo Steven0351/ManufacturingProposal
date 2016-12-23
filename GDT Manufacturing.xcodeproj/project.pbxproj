@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		622518AB1E0DBD8500068770 /* FiberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622518AA1E0DBD8500068770 /* FiberViewController.swift */; };
 		62B3966E1E0617630095AC3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B3966D1E0617630095AC3D /* AppDelegate.swift */; };
 		62B396701E0617630095AC3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B3966F1E0617630095AC3D /* ViewController.swift */; };
 		62B396731E0617630095AC3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B396711E0617630095AC3D /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		622518AA1E0DBD8500068770 /* FiberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiberViewController.swift; sourceTree = "<group>"; };
 		62B3966A1E0617630095AC3D /* GDT Manufacturing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GDT Manufacturing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B3966D1E0617630095AC3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62B3966F1E0617630095AC3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				62B3966D1E0617630095AC3D /* AppDelegate.swift */,
 				62B3966F1E0617630095AC3D /* ViewController.swift */,
 				62B396711E0617630095AC3D /* Main.storyboard */,
+				622518AA1E0DBD8500068770 /* FiberViewController.swift */,
 				62B396771E0617630095AC3D /* Assets.xcassets */,
 				62B396791E0617630095AC3D /* LaunchScreen.storyboard */,
 				62B3967C1E0617630095AC3D /* Info.plist */,
@@ -143,6 +146,7 @@
 				62B396701E0617630095AC3D /* ViewController.swift in Sources */,
 				62B396761E0617630095AC3D /* GDT_Manufacturing.xcdatamodeld in Sources */,
 				62B3966E1E0617630095AC3D /* AppDelegate.swift in Sources */,
+				622518AB1E0DBD8500068770 /* FiberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +310,7 @@
 				62B396811E0617630095AC3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
