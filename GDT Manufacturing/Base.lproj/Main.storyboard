@@ -204,6 +204,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="jacketRatingEditing:" destination="Qje-qD-KvM" eventType="editingDidBegin" id="7Wk-Ch-cha"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CRS-40-07n">
                                 <rect key="frame" x="199" y="323" width="150" height="30"/>
@@ -213,6 +216,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="connectorSideaEditing:" destination="Qje-qD-KvM" eventType="editingDidBegin" id="Nnh-2W-9TB"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ujs-Cl-YSr">
                                 <rect key="frame" x="199" y="364" width="150" height="30"/>
@@ -222,6 +228,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="connectorSidebEditing:" destination="Qje-qD-KvM" eventType="editingDidBegin" id="Rc9-BC-BrU"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XiS-0j-GE1">
                                 <rect key="frame" x="199" y="405" width="150" height="30"/>
@@ -240,6 +249,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="uomEditing:" destination="Qje-qD-KvM" eventType="editingDidBegin" id="9xM-IK-VdK"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5O9-Uj-gmi">
                                 <rect key="frame" x="199" y="486" width="150" height="30"/>
@@ -258,6 +270,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="fiberCountEditing:" destination="Qje-qD-KvM" eventType="editingDidBegin" id="Kh7-37-QLd"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zke-iK-Lxn">
                                 <rect key="frame" x="141" y="551" width="92" height="30"/>
@@ -275,77 +290,50 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="fiberTypeEditing:" destination="Qje-qD-KvM" eventType="editingDidBegin" id="M5r-6M-kZu"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ch-kP-Gna">
                                 <rect key="frame" x="16" y="68" width="333" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zhS-NP-UEm">
-                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6BI-b6-RaY">
-                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ls5-7q-hC2">
-                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRD-kv-W9M">
-                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btU-QW-WMx">
-                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGm-v6-RKr">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yi-bu-Dtu">
                                 <rect key="frame" x="0.0" y="451" width="375" height="216"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="0.77737489989999997" blue="0.34304844550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ls5-7q-hC2" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leading" id="0Na-Gp-wue"/>
                             <constraint firstItem="ixj-eQ-M2W" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leadingMargin" constant="10" id="0bp-dK-9F4"/>
                             <constraint firstItem="XiS-0j-GE1" firstAttribute="trailing" secondItem="fMT-8l-xK2" secondAttribute="trailingMargin" constant="-10" id="7u4-bQ-pSi"/>
-                            <constraint firstAttribute="trailing" secondItem="6BI-b6-RaY" secondAttribute="trailing" id="9Ep-B0-aXK"/>
                             <constraint firstItem="ybI-Lg-ivW" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leadingMargin" constant="10" id="9Gz-58-wFY"/>
-                            <constraint firstAttribute="trailing" secondItem="CRD-kv-W9M" secondAttribute="trailing" id="9hQ-Pc-S9F"/>
                             <constraint firstItem="ujs-Cl-YSr" firstAttribute="trailing" secondItem="fMT-8l-xK2" secondAttribute="trailingMargin" constant="-10" id="Aeu-tR-Vdl"/>
                             <constraint firstItem="IMF-t7-Rc0" firstAttribute="top" secondItem="THj-Q3-mX5" secondAttribute="bottom" constant="140" id="AfD-ss-ThO"/>
-                            <constraint firstItem="xGD-xM-1XJ" firstAttribute="top" secondItem="Ls5-7q-hC2" secondAttribute="bottom" id="Ak6-1L-ysX"/>
                             <constraint firstItem="CRS-40-07n" firstAttribute="centerY" secondItem="O2Y-N8-Eyr" secondAttribute="centerY" id="BEc-et-48c"/>
                             <constraint firstItem="5O9-Uj-gmi" firstAttribute="centerY" secondItem="Pbh-gJ-RTY" secondAttribute="centerY" id="BiN-Vm-gBg"/>
                             <constraint firstItem="9WV-15-j3I" firstAttribute="centerY" secondItem="2hL-Dl-QOK" secondAttribute="centerY" id="BpW-jE-bb3"/>
-                            <constraint firstItem="xGD-xM-1XJ" firstAttribute="top" secondItem="btU-QW-WMx" secondAttribute="bottom" id="D8M-Oj-U0j"/>
+                            <constraint firstItem="xGD-xM-1XJ" firstAttribute="top" secondItem="0Yi-bu-Dtu" secondAttribute="bottom" id="CSw-ae-dId"/>
                             <constraint firstItem="TLn-zc-sdi" firstAttribute="top" secondItem="ybI-Lg-ivW" secondAttribute="bottom" constant="20" id="Ded-Aw-kXP"/>
                             <constraint firstItem="O2Y-N8-Eyr" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leadingMargin" constant="10" id="Dtm-Up-Pt8"/>
-                            <constraint firstItem="6BI-b6-RaY" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leading" id="Dwh-la-ml6"/>
-                            <constraint firstItem="xGD-xM-1XJ" firstAttribute="top" secondItem="CRD-kv-W9M" secondAttribute="bottom" id="Eoj-6E-ePK"/>
                             <constraint firstItem="GPt-wu-ckX" firstAttribute="trailing" secondItem="fMT-8l-xK2" secondAttribute="trailingMargin" constant="-10" id="Guk-FT-q4m"/>
                             <constraint firstItem="2hL-Dl-QOK" firstAttribute="top" secondItem="d6T-Zl-Wkk" secondAttribute="bottom" constant="20" id="JBF-66-NEo"/>
                             <constraint firstItem="hcX-xV-zGA" firstAttribute="centerY" secondItem="d6T-Zl-Wkk" secondAttribute="centerY" id="Jpc-IN-Wo2"/>
                             <constraint firstItem="Pbh-gJ-RTY" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leadingMargin" constant="10" id="NEr-9r-tB3"/>
-                            <constraint firstItem="xGD-xM-1XJ" firstAttribute="top" secondItem="zhS-NP-UEm" secondAttribute="bottom" id="PpR-A3-Ncm"/>
+                            <constraint firstAttribute="trailing" secondItem="0Yi-bu-Dtu" secondAttribute="trailing" id="OtP-f6-PvT"/>
                             <constraint firstItem="5O9-Uj-gmi" firstAttribute="trailing" secondItem="fMT-8l-xK2" secondAttribute="trailingMargin" constant="-10" id="PuY-2W-twm"/>
-                            <constraint firstAttribute="trailing" secondItem="zhS-NP-UEm" secondAttribute="trailing" id="S2q-OA-rzB"/>
-                            <constraint firstAttribute="trailing" secondItem="btU-QW-WMx" secondAttribute="trailing" id="WR8-sH-LZT"/>
                             <constraint firstItem="MUK-Gb-5Id" firstAttribute="centerY" secondItem="IMF-t7-Rc0" secondAttribute="centerY" id="X2K-35-7TQ"/>
-                            <constraint firstAttribute="trailing" secondItem="BGm-v6-RKr" secondAttribute="trailing" id="XFI-NL-a4w"/>
-                            <constraint firstItem="xGD-xM-1XJ" firstAttribute="top" secondItem="BGm-v6-RKr" secondAttribute="bottom" id="Zc8-W6-bhz"/>
+                            <constraint firstItem="0Yi-bu-Dtu" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leading" id="Yhk-vu-Dqu"/>
                             <constraint firstItem="TLn-zc-sdi" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leadingMargin" constant="10" id="akN-hT-C2P"/>
                             <constraint firstItem="Pbh-gJ-RTY" firstAttribute="top" secondItem="ixj-eQ-M2W" secondAttribute="bottom" constant="20" id="bTr-wg-ePH"/>
-                            <constraint firstItem="btU-QW-WMx" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leading" id="bxH-E4-mVf"/>
-                            <constraint firstItem="CRD-kv-W9M" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leading" id="cC4-7I-klM"/>
                             <constraint firstAttribute="trailing" secondItem="MUK-Gb-5Id" secondAttribute="trailing" constant="26" id="gcE-rc-6Wa"/>
                             <constraint firstItem="d6T-Zl-Wkk" firstAttribute="top" secondItem="IMF-t7-Rc0" secondAttribute="bottom" constant="20" id="hLv-EH-kC8"/>
                             <constraint firstItem="ixj-eQ-M2W" firstAttribute="top" secondItem="TLn-zc-sdi" secondAttribute="bottom" constant="20" id="j0y-xz-0St"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hcX-xV-zGA" secondAttribute="trailing" constant="10" id="keX-vg-TgL"/>
                             <constraint firstItem="2hL-Dl-QOK" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leadingMargin" constant="10" id="l5d-7Z-yql"/>
-                            <constraint firstItem="xGD-xM-1XJ" firstAttribute="top" secondItem="6BI-b6-RaY" secondAttribute="bottom" id="lH0-9l-KZb"/>
-                            <constraint firstItem="zhS-NP-UEm" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leading" id="lP0-xT-VEu"/>
                             <constraint firstItem="CRS-40-07n" firstAttribute="trailing" secondItem="fMT-8l-xK2" secondAttribute="trailingMargin" constant="-10" id="nPT-Mj-u36"/>
                             <constraint firstItem="9WV-15-j3I" firstAttribute="trailing" secondItem="fMT-8l-xK2" secondAttribute="trailingMargin" constant="-10" id="nUj-I2-j5q"/>
                             <constraint firstItem="IMF-t7-Rc0" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leadingMargin" constant="10" id="oMl-ri-z6C"/>
-                            <constraint firstAttribute="trailing" secondItem="Ls5-7q-hC2" secondAttribute="trailing" id="oq2-Ru-aoY"/>
-                            <constraint firstItem="BGm-v6-RKr" firstAttribute="leading" secondItem="fMT-8l-xK2" secondAttribute="leading" id="p8V-t5-Z96"/>
                             <constraint firstItem="ybI-Lg-ivW" firstAttribute="top" secondItem="O2Y-N8-Eyr" secondAttribute="bottom" constant="20" id="q0O-iw-rC3"/>
                             <constraint firstItem="ujs-Cl-YSr" firstAttribute="centerY" secondItem="ybI-Lg-ivW" secondAttribute="centerY" id="qDD-a6-dkP"/>
                             <constraint firstItem="O2Y-N8-Eyr" firstAttribute="top" secondItem="2hL-Dl-QOK" secondAttribute="bottom" constant="20" id="qQo-B1-Xke"/>
@@ -355,20 +343,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="connectorAPicker" destination="CRD-kv-W9M" id="pN0-zF-l8F"/>
-                        <outlet property="connectorBPicker" destination="btU-QW-WMx" id="zTj-rn-qbu"/>
                         <outlet property="connectorSideaTextField" destination="CRS-40-07n" id="NWz-wT-nXf"/>
                         <outlet property="connectorSidebTextField" destination="ujs-Cl-YSr" id="wJK-Lm-His"/>
-                        <outlet property="fiberCountPicker" destination="6BI-b6-RaY" id="6Jv-Rj-6Gx"/>
                         <outlet property="fiberCountTextField" destination="hcX-xV-zGA" id="KVO-Fd-3cs"/>
-                        <outlet property="fiberTypePicker" destination="zhS-NP-UEm" id="oCE-nJ-jg4"/>
+                        <outlet property="fiberTypePicker" destination="0Yi-bu-Dtu" id="a7D-wS-UMO"/>
                         <outlet property="fiberTypeTextField" destination="MUK-Gb-5Id" id="Gbr-XH-3cb"/>
-                        <outlet property="jacketRatingPicker" destination="Ls5-7q-hC2" id="ddS-3o-qOP"/>
                         <outlet property="jacketRatingTextField" destination="9WV-15-j3I" id="tZ2-cf-Lqh"/>
                         <outlet property="lengthTextField" destination="XiS-0j-GE1" id="XHZ-S2-MPC"/>
                         <outlet property="logoImageView" destination="1ch-kP-Gna" id="7sY-8s-JrS"/>
                         <outlet property="quantityTextField" destination="5O9-Uj-gmi" id="JGf-15-Ceg"/>
-                        <outlet property="uomPicker" destination="BGm-v6-RKr" id="lPX-hU-IF4"/>
                         <outlet property="uomTextField" destination="GPt-wu-ckX" id="Bu8-EP-Qza"/>
                     </connections>
                 </viewController>
