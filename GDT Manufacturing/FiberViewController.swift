@@ -37,17 +37,19 @@ class FiberViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         //Arrays for pickerViews
         
-        uomArray = ["Feet","Meters"]
-        connectorArray = ["LC/UPC", "SC/UPC","LC/APC","SC/APC","MTP Male","MTP Female","ST","FC","MT-RJ"]
-        jacketRatingArray = ["Riser","Plenum","LSZH","I/O"]
-        fiberCountArray = ["1F","2F","8F","12F","24F","48F","96F","144F"]
-        fiberTypeArray = ["Simplex","Duplex - Round","Duplex - Zip","Breakout","Loose Tube","Microarray","Ribbon"]
+        uomArray = ["","Feet","Meters"]
+        connectorArray = ["","LC/UPC", "SC/UPC","LC/APC","SC/APC","MTP Male","MTP Female","ST","FC","MT-RJ"]
+        jacketRatingArray = ["","Riser","Plenum","LSZH","I/O"]
+        
+        fiberTypeArray = ["","Simplex","Duplex - Round","Duplex - Zip","Breakout","Loose Tube","Microarray","Ribbon"]
         errorArray = ["Error"]
         
-        //Set delegates to self and hide pickers
+        //Set picker delegate and datasource to self
         
         fiberTypePicker.delegate = self
         fiberTypePicker.dataSource = self
+        
+        //Set textfield delegates to self
         
         fiberTypeTextField.delegate = self
         fiberCountTextField.delegate = self
@@ -58,14 +60,34 @@ class FiberViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         uomTextField.delegate = self
         quantityTextField.delegate = self
         
+        //set toolbar for Picker
+        
+        
         //set inputView for selected textFields to fiberTypePicker
         
         fiberTypeTextField.inputView = fiberTypePicker
+        
         fiberCountTextField.inputView = fiberTypePicker
+       
         jacketRatingTextField.inputView = fiberTypePicker
+ 
         connectorSideaTextField.inputView = fiberTypePicker
+     
         connectorSidebTextField.inputView = fiberTypePicker
+  
         uomTextField.inputView = fiberTypePicker
+     
+        
+        //enable numberpad for length and quantity fields
+        
+        lengthTextField.keyboardType = UIKeyboardType.numberPad
+        quantityTextField.keyboardType = UIKeyboardType.numberPad
+        
+        //enable done button on pickerView
+        
+        
+        
+       
         
         fiberTypePicker.removeFromSuperview()
 
@@ -80,6 +102,15 @@ class FiberViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     //return number of rows in pickerview
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
+        if fiberTypeTextField.text == "Simplex" {
+            fiberCountArray = ["","1F"]
+        } else if fiberTypeTextField.text == "Duplex - Round" || fiberTypeTextField.text == "Duplex - Zip" {
+            fiberCountArray = ["","2F"]
+        } else if fiberTypeTextField.text == "Ribbon" {
+            fiberCountArray = ["","8F", "12F", "24F", "48F", "96F", "144F"]
+        } else {
+            fiberCountArray = ["","1F","2F","8F","12F","24F","48F","96F","144F"]
+        }
         if fiberTypeTextField.isEditing == true {
             return fiberTypeArray.count
         } else if fiberCountTextField.isEditing == true{
