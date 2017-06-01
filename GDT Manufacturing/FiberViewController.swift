@@ -32,8 +32,6 @@ class FiberViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        logoImageView.image = UIImage(named: "gdtmfg-logo")
         
         //Arrays for pickerViews
         
